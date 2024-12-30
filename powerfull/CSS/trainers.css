@@ -1,0 +1,138 @@
+/*Our Best Trainers Styling*/
+
+#trainers{
+    background-color: var(--second-bg-color);
+    position:relative;
+    padding:40px 12%;
+}
+
+div.trainers-container{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:10px;
+}
+
+div.trainers-container h1{
+    font-size: 25px;
+    color: var(--main-color);
+    font-weight:1000;
+}
+
+div.underline{
+    width:5%;   
+}
+
+div.trainers-container p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-inline: 15%;
+}
+
+.img-container{
+    display:flex;
+    justify-content: center;
+    gap:10%;
+    margin:50px;
+   
+}
+
+.img-div> img{
+    max-width: 100%; /* Resimlerim kapsayıcıdan taşmayacak */
+    height: auto; 
+    border:1px solid var(--second-color);
+    border-radius: 10px; 
+}
+
+
+
+/**/
+
+
+/*Purchase From Us*/
+
+section#purchase{
+    background-color: rgb(255, 255, 255);
+    padding:10px 10%;
+}
+.purchase-container{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:10px;
+    padding:5px 10%;
+}
+
+.purchase-img-container{
+    display:flex;
+    justify-content:center;
+    gap:1%;
+    margin-top:15px;
+}
+.purchase-img-container img{
+    max-width: 100%; /* Resimlerim kapsayıcıdan taşmayacak */
+    height: auto; 
+    border:none;
+    border-radius: 10px 10px 0 0; /*üst tarafı yuvarladık*/
+}
+
+.purchase-item{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    border:none; /*border var ama gözükmüyor*/
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.add-chart{
+    display:flex;
+    justify-content: flex-start;
+    gap:14%;
+    margin-left:5%;
+    margin-bottom: 5px;;
+}
+
+.purchase-container h1{
+    font-weight:1000;
+    text-align: center;;
+    font-size: 30px;
+    color:var(--main-color);
+    margin:0;
+}
+
+.purchase-container p{
+    margin:0 10%;
+    font-weight: bold;
+}
+
+.purchase-img-container h6{
+    font-size: 20px;
+    color:rgb(65, 62, 62);
+}
+.purchase-img-container p{
+    color:black;
+    font-weight: 700;
+    font-size: 12px;;
+}
+
+/*Mobil*/
+@media(max-width:576px){
+    /*Trainers Part*/
+    .img-container{
+        display:flex;
+        flex-direction: column;
+        gap:30px;
+        margin:50px;
+    }
+
+    /*Purchase Part*/
+    .purchase-img-container{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        gap:30px;
+        margin-top:15px;
+    }
+    
+}
